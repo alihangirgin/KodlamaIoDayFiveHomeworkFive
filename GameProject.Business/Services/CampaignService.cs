@@ -7,7 +7,7 @@ using System.Text;
 
 namespace GameProject.Business.Services
 {
-    public class CampaignService:ICampaignService
+    public class CampaignService : ICampaignService
     {
         public List<Campaign> List()
         {
@@ -52,5 +52,6 @@ namespace GameProject.Business.Services
 
             return campaignDto;
         }
+
     }
 }
