@@ -1,0 +1,22 @@
+﻿{
+  "ProviderId": "Microsoft.VisualStudio.ConnectedService.Wcf",
+  "Version": "15.0.40203.910",
+  "ExtendedData": {
+    "inputs": [
+      "https://tckimlik.nvi.gov.tr/Service/KPSPublic.asmx"
+    ],
+    "collectionTypes": [
+      "System.Collections.Generic.Dictionary`2",
+      "System.Collections.Generic.List`1"
+    ],
+    "messageContract": true,
+    "namespaceMappings": [
+      "*, MernisServiceReference"
+    ],
+    "references": [
+      "C:\\Users\\aliha\\Desktop\\KodlamaIo\\KodlamaIoDayFive\\KodlamaIoDayFiveHomeworkFive\\GameProject.Business\\bin\\Debug\\netcoreapp3.1\\GameProject.Data.dll"
+    ],
+    "targetFramework": "netcoreapp3.1",
+    "typeReuseMode": "All"
+  }
+}
