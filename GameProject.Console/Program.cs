@@ -1,9 +1,10 @@
-﻿using GameProject.Business.Interfaces;
+﻿
+using GameProject.Business.Interfaces;
 using GameProject.Business.Services;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 
-namespace GameProject.Console
+namespace DayFiveHomeworkFive
 {
     class Program
     {

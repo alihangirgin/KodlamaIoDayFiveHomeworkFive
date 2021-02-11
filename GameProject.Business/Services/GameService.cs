@@ -8,7 +8,7 @@ using System.Text;
 
 namespace GameProject.Business.Services
 {
-    public class GameService:IGameService
+    public class GameService : IGameService
     {
         private readonly ICampaignService _campaignService;
         public GameService(ICampaignService campaignService)
@@ -52,10 +52,10 @@ namespace GameProject.Business.Services
                 gameDto.GameName = gameItem.GameName;
                 gameDto.Id = gameItem.Id;
                 gameDto.campaignDtos = new List<CampaignDto>();
-              
+
                 foreach (var campaignItem in campaignList)
                 {
-                    if(gameItem.Id==campaignItem.GameId)
+                    if (gameItem.Id == campaignItem.GameId)
                     {
                         var campaignDto = new CampaignDto();
                         campaignDto.Id = campaignItem.Id;
@@ -77,12 +77,12 @@ namespace GameProject.Business.Services
             Console.WriteLine("GameList");
             foreach (var item in gameDtoList)
             {
-                Console.WriteLine(item.Id + "-" + item.GameName);
+                Console.WriteLine("GameId:" + item.Id + "-" + item.GameName);
                 if (item.campaignDtos != null)
                 {
                     foreach (var campaignItem in item.campaignDtos)
                     {
-                        Console.WriteLine(campaignItem.CampaignName + "-" + campaignItem.DiscountRate + "% discount");
+                        Console.WriteLine("CampaignId:" + campaignItem.Id + "-" + campaignItem.CampaignName + "-" + campaignItem.DiscountRate + "% discount");
                     }
                 }
             }
